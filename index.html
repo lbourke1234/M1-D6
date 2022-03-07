@@ -74,7 +74,7 @@
         </tr>
     </table>
     <footer>
-        <p>Leon's Smartphones, Limerick, Ireland</p>
+        <p id="address">Leon's Smartphones, Limerick, Ireland</p>
     </footer>
     <textarea rows="10" cols="50"></textarea>
     <script>
@@ -85,6 +85,12 @@
         function changePageBackgroundColor(newBackgroundColor){
             let bodyNode = document.getElementsByTagName('body')
             bodyNode.backgroundColor = newBackgroundColor
+        }
+        function changeToFakeAddress(){
+            let footerNode = document.getElementById("address")
+            let fakeAddress = "Johns Smartphones, Berlin, Germany"
+            footerNode.innerText = fakeAddress
+
         }
     </script>
 </body>
